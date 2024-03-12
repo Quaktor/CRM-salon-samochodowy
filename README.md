@@ -4,17 +4,16 @@
 python 3.11
 ```
 ### Instrukcja instalacji
-
-Utworzenie wirtualnej zmiennej środowiskowej
+Utworzenie wirtualnej zmiennej środowiskowej:
 ```sh
 python -m venv venv
 ```
-Aktywacja zmiennej środowiskowej
-1. Windows
+Aktywacja zmiennej środowiskowej:
+- Windows
 ```sh
 .\venv\Scripts\activate
 ```
-2. Unix
+- Unix
 ```sh
 source venv/bin/activate
 ```
@@ -22,17 +21,17 @@ source venv/bin/activate
 ```sh
 pip install django
 ```
-3a. Pakiety  
+4. Pakiety  
 Pillow
 ```sh
 pip install Pillow
 ```
-4. Uruchomienie projektu
-1. Windows
+5. Uruchomienie pojektu
+- Windows:
 ```sh
-python manage.py runserver
+python manage.py runserver 
 ```
-2. Unix
+- Unix:
 ```sh
-python3 manage.py runserver
+python3 manage.py runserver 
 ```
