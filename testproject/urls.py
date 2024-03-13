@@ -19,9 +19,19 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
+def trigger_error(request):
+    my_list = [2, 1, 3, 7]
+    print(my_list[5])      
+
+
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), path('sentry-debug/', trigger_error)
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# urls.py
+from django.urls import path
+
